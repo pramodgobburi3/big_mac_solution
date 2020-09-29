@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {},
   "scripts": {
-    "prestart": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "prestart": "npm install && concurrently \"cd server && npm install\" \"cd client && npm install\"",
     "start": "concurrently --kill-others \"cd server && npm start\" \"cd client && npm start\""
   },
   "devDependencies": {
