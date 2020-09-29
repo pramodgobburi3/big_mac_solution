@@ -15,8 +15,9 @@ const App = props => {
   useEffect(() => {
     async function fetchCountry() {
       // Get IP address and make request to server with IP
-      const IP = await ip.v4();
       try {
+        const IP = await ip.v4();
+
         http.get(FETCH_COUNTRY_URL + IP, (r) => {
           r.setEncoding('utf-8');
           r.on('data', (data) => {
