@@ -110,7 +110,11 @@ app.get('/get-country/:ip', function (req, res) {
       var json_d = JSON.parse(d);
       return response_helper.returnStatusError(r.statusCode, req, res, json_d);
     });
-  })
+  }).on('error', function(e) {
+    console.log('error', e);
+    return response_helper.returnInternalServerError(req, res, "Something went wrong, please try again later.");
+  });
+
 });
 
 app.get('/local-result/:country', function (req, res) {
