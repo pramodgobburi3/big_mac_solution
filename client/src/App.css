@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Top {
+  flex: 1;
+}
+
+.Middle {
+  flex: 1
+}
+
+.Bottom {
+  flex: 1
+}
