@@ -2,7 +2,7 @@
 ### Installation
 ```
 git clone https://github.com/pramodgobburi3/big_mac_solution.git
-cd big_mac
+cd big_mac_solution
 npm start
 ```
 #### This should run both the Express API as well as the React application concurrently.
